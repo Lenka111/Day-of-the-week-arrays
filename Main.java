@@ -5,9 +5,10 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        String [] array = {"Monday","Tuesday","W","TH","F","S","Sunday"};
+        String [] array = {"Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"};
 
         System.out.println("Enter a number from 1 to 7 to get the day of the week: ");
+        //read user input ans store it to number variable
         int number = sc.nextInt();
 
         //validation
@@ -22,7 +23,7 @@ public class Main {
 
     private static String getDayOfTheWeek(String[] array, int number) {
 
-        //initialize string that will be the day in the array
+        //initialize a string variable  that will store the days in the array
         String dayOfTheWeek = null;
 
         for(int i = 0; i < array.length; i++){
